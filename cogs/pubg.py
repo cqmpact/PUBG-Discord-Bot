@@ -30,7 +30,7 @@ regions={
 
 class default:
 	mode='squad-fpp'
-	region='na'
+	region='eu'
 
 class pubg():
 	def __init__(self,bot):
@@ -66,7 +66,7 @@ class pubg():
 		nickname=pID['data-user_nickname']
 		#get line with current season
 		season=page.find('a',{'class':'game-server__btn game-server__btn--on'})
-		season=season['data-status']
+		season = ("2018-04")
 		return {'playerid':playerid,'season':season,'nickname':nickname}
 
 	@commands.command()
